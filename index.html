@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="container">
+            <h2>Weather Api</h2>
+            <div class="textBox">
+                <input type="text" placeholder="Location" id="location" autocomplete="off">
+                <input type="text" placeholder="Access Token" id="token" value="ZQWZR7YVRKD5RNDH9NV4LH584">
+                <button onclick="submit()"> Submit </button>
+                <p style="color: white;" id="success"></p>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="data">
+
+            <h2>Weather Data</h2>
+        </div>
+        <table>
+            <tr colspan="2" rowspan="2">
+                <td>Location: <span id="loca" style="color: blue;"></span></td>
+            </tr>
+
+            <tr>
+                <td>Lat: <span id="lat" style="color: rgb(255, 94, 0);"></span></td>
+                <td>Long: <span id="long" style="color: rgb(255, 94, 0);"></span></td>
+            </tr>
+            <tr>
+                <td>TimeZone: <span id="timezone" style="color: blue;"></span></td>
+            </tr>
+            <tr>
+                <td>Wind Speed: <span id="windSpeed" style="color: blue;"></span></td>
+            </tr>
+            <tr>
+                <td>Pressure: <span id="pressure" style="color: blue;"></span></td>
+            </tr>
+            <tr>
+                <td>Humidity: <span id="humidity" style="color: blue;"></span></td>
+            </tr>
+            <tr>
+                <td>Wind Direction: <span id="wind_dir" style="color: blue;"></span></td>
+            </tr>
+            <tr>
+                <td>UV Index: <span id="uv_index" style="color: blue;"></span></td>
+            </tr>
+            <tr>
+                <td>Feels Like: <span id="feelslike" style="color: blue;"></span></td>
+            </tr>
+            <tr>
+                <td>Conditions: <span id="condition" style="color: blue;"></span></td>
+            </tr>
+            <tr>
+                <td>Sunrise: <span id="sunrise" style="color: blue;"></span></td>
+            </tr>
+            <tr>
+                <td>Sunset: <span id="sunset" style="color: blue;"></span></td>
+            </tr>
+
+        </table>
+
+
+
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
